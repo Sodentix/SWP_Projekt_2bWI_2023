@@ -12,9 +12,9 @@ form.addEventListener('submit', (event) => {
   }
 
   // Kommentar-Element erstellen und hinzufügen
-  const commentElement = document.createElement('p');
+  const commentElement = document.createElement("li");
   commentElement.textContent = "Du:" + " " + comment;
-  commentElement.style.fontWeight = "bold";
+  //commentElement.style.fontWeight = "bold";
   commentsContainer.appendChild(commentElement);
 
   // Textfeld leeren
