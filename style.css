@@ -1,0 +1,25 @@
+@media only screen and (max-width: 380px) {
+form {
+    width: 90%;
+    margin: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  button {
+    display: flex;
+    text-align: center;
+  }
+
+  #comments {
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+  }
+}
