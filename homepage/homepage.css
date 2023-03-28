@@ -72,6 +72,7 @@ a{
     transform: translateY(-8px) rotate(-45deg);
   }
   .nav-menu{
+    border-top: 2px solid rgba(84, 84, 84, 0.5);
     position: fixed;
     left: -100%;
     top: 70px;
