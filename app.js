@@ -1,3 +1,4 @@
+//Kommentarbox
 const form = document.querySelector('form');
 const commentsContainer = document.querySelector('#comments');
 
@@ -15,9 +16,26 @@ form.addEventListener('submit', (event) => {
   const commentElement = document.createElement("p");
   commentElement.textContent = "User64352:" + " " + comment;
   commentElement.style.fontWeight = "bold";
-  //commentElement.style.fontWeight = "bold";
   commentsContainer.appendChild(commentElement);
 
   // Textfeld leeren
   document.querySelector('#comment').value = '';
-});
+})
+// Popup-Fenster
+var modal = document.getElementById("meinModal");
+  var btn = document.getElementById("beschreibung");
+  var span = document.getElementsByClassName("modal-schließen")[0];
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
