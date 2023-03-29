@@ -56,9 +56,13 @@ form{
   border: 2px solid rgba(84, 84, 84, 0.2);
   height: auto;
   width: 80%;
-  padding-left: 4rem;
   margin-top: 1.5rem;
   margin-left: 10%;
+}
+
+body{
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 0;
 }
 
 .creed{
@@ -70,6 +74,7 @@ form{
   margin-top: 0.5rem;
   width: 20rem;
 }
+
 .comment{
   display: flex;
   justify-content: center;
@@ -142,7 +147,8 @@ form{
   outline: none;
   color: white;
   background: #333;
-  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0.3rem rgba(121, 121, 121, 0.75);
 }
 
@@ -160,11 +166,10 @@ form{
   display: block;
   margin-top: 20px;
   margin-left: 8rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   font-size: large;
   width: 90%;
-  border: 2px solid rgba(84, 84, 84, 0.2);
+  border: 2px solid rgba(84, 84, 84, 0.4);
 }
 
 @media(max-width:1536px)
