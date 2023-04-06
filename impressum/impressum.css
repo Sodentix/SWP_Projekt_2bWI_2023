@@ -91,5 +91,36 @@
       left: 0;
     }
   }
+
+/* Styles für das Impressum */
+h1 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #262626;
+}
+
+.impressumInformationenDiv {
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
+.impressumInformationen {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.impressumInformationen:first-child {
+  font-weight: bold;
+}
+
+.impressumInformationen:last-child {
+  margin-bottom: 0;
+}
+  
+
+  
     
   
