@@ -1,99 +1,492 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  header {
-    background-color: #262626;
+  margin: 0;  
+}
+
+body{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+.nav-link :hover {
+  color: aquamarine;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.reihe1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+#creed{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#mechanic{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#minions{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#cars{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#wick{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+.reihe2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*margin-top: -190rem;*/
+}
+
+#endgame{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#ironman2{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#thor{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#cptnamerica{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+#blackpanther{
+  width: 20rem;
+  height: 29.6rem;
+  border: 2px solid rgba(84, 84, 84, 0.2);
+  border-radius: 1.5rem;
+}
+
+.minions , .cars , .wick , .cptnamerica , .blackpanther , .endgame{
+  display: block;
+}
+
+.minions2 , .cars2 , .wick2 , .cptnamerica2 , .blackpanther2 , .endgame2{
+  display: none;
+}
+
+
+@media(max-width:1600px){
+  #creed{
+    width: 18rem;
   }
 
-  body{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  #mechanic{
+    width: 18rem;
   }
-  
-  li {
-    list-style: none;
+
+  #minions{
+    width: 18rem;
   }
-  
-  a{
-    color: white;
-    text-decoration: none;
+
+  #cars{
+    width: 18rem;
   }
-  
-  .navbar{
-    min-height: 70px;
+
+  #wick{
+    width: 18rem;
+  }
+
+  #endgame{
+    width: 18rem;
+  }
+
+  #ironman2{
+    width: 18rem;
+  }
+
+  #thor{
+    width: 18rem;
+  }
+
+  #cptnamerica{
+    width: 18rem;
+  }
+
+  #blackpanther{
+    width: 18rem;
+  }
+
+}
+
+@media(max-width: 920px){
+  .reihe1 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
+    margin-left: 7rem;
   }
   
-  .nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-  
-  }
-  .nav-branding{
-    font-size: 2rem;
+  .creed, .mechanic {
+    flex-basis: 50%;
   }
   
-  .nav-link {
-    transition: 0.7s ease;
-  }
-  .nav-link :hover {
-    color: aquamarine;
-  }
-  .hamburger{
+  .minions , .cars , .wick{
     display: none;
-    cursor: pointer;
   }
-  .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
+
+  .reihe2tablet {
+    display: flex;
+    margin-left: 7rem;
+    opacity: 1;
   }
-  @media(max-width:768px)
-  {
-    .hamburger{
+  
+  .cars2, .minions2 {
+    flex-basis: 50%;
+  }
+
+  #minions2 {
+    width: 18rem;
+    height: 29.6rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+  }
+
+  #cars2 {
+    width: 18rem;
+    height: 29.6rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+  }
+
+  .reihe3tablet {
+    display: flex;
+    margin-left: 7rem;
+  }
+  
+  .wick2, .endgame2 {
+    flex-basis: 50%;
+  }
+
+  #wick2 {
+    width: 18rem;
+    height: 29.6rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+  }
+
+  #endgame2 {
+    width: 18rem;
+    height: 29.6rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+  }
+
+  .reihe2{
+      display: flex;
+      margin-left: 7rem;
+      margin-top: 0;
+  }
+    .ironman2, .thor {
+      flex-basis: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cptnamerica , .blackpanther, .endgame{
+      display: none;
+    }
+    .reihe4tablet{
+      display: flex;
+      margin-left: 7rem;
+    }
+
+    .cptnamerica2, .blackpanther2 {
+      flex-basis: 50%;
+    }
+
+    .minions2 , .cars2 , .wick2 , .cptnamerica2 , .blackpanther2 , .endgame2{
       display: block;
     }
-  
-    .hamburger.active .bar:nth-child(2)
-    {
-      opacity: 0;
+
+    #cptnamerica2 {
+      width: 18rem;
+      height: 29.6rem;
+      border-radius: 1.5rem;
+      border: 2px solid rgba(84, 84, 84, 0.2);
     }
-    .hamburger.active .bar:nth-child(1)
-    {
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3)
-    {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        border-top: 2px solid rgba(84, 84, 84, 0.5);
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: #262626;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-    .nav-item {
-      margin: 16px 0;
-    }
-    .nav-menu.active {
-      left: 0;
+
+    #blackpanther2 {
+      width: 18rem;
+      height: 29.6rem;
+      border-radius: 1.5rem;
+      border: 2px solid rgba(84, 84, 84, 0.2);
     }
   }
-    
+
   
+
+  @media(max-width:851px){
+    .reihe1{
+      margin-left: 6rem;
+    }
+
+    .reihe2tablet{
+      margin-left: 6rem;
+    }
+
+    .reihe3tablet{
+      margin-left: 6rem;
+    }
+
+    .reihe2{
+      margin-left: 6rem;
+    }
+
+    .reihe4tablet{
+      margin-left: 6rem;
+    }
+
+    #cptnamerica2{
+      width: 18rem;
+      height: 29.6rem;
+      border-radius: 1.5rem;
+      border: 2px solid rgba(84, 84, 84, 0.2);
+    }
+
+    #blackpanther2{
+      width: 18rem;
+    height: 29.6rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(84, 84, 84, 0.2);
+    }
+
+    .cptnamerica , .blackpanther, .endgame{
+      display: none;
+    }
+
+  }
+
+  @media(max-width:815px){
+    .reihe1{
+      margin-left: 5rem;
+    }
+
+    .reihe2tablet{
+      margin-left: 5rem;
+    }
+
+    .reihe3tablet{
+      margin-left: 5rem;
+    }
+
+    .reihe2{
+      margin-left: 5rem;
+    }
+
+    .reihe4tablet{
+      margin-left: 5rem;
+    }
+
+  }
+
+  @media(max-width:780px){
+    .reihe1{
+      margin-left: 4rem;
+    }
+
+    .reihe2tablet{
+      margin-left: 4rem;
+    }
+
+    .reihe3tablet{
+      margin-left: 4rem;
+    }
+
+    .reihe2{
+      margin-left: 4rem;
+    }
+
+    .reihe4tablet{
+      margin-left: 4rem;
+    }
+  }
+
+  @media(max-width:730px){
+    .reihe1{
+      margin-left: 3rem;
+    }
+
+    .reihe2tablet{
+      margin-left: 3rem;
+    }
+
+    .reihe3tablet{
+      margin-left: 3rem;
+    }
+
+    .reihe2{
+      margin-left: 3rem;
+    }
+
+    .reihe4tablet{
+      margin-left: 3rem;
+    }
+  }
+    @media(max-width:700px){
+      .reihe1{
+        margin-left: 2rem;
+      }
+
+      .reihe2tablet{
+        margin-left: 2rem;
+      }
+
+      .reihe3tablet{
+        margin-left: 2rem;
+      }
+
+      .reihe2{
+        margin-left: 2rem;
+      }
+
+      .reihe4tablet{
+        margin-left: 2rem;
+      }
+  }
+
+  @media(max-width:682px){
+  header{
+    margin: -10px;
+}
+.hamburger{
+  display: block;
+}
+.hamburger.active .bar:nth-child(2)
+{
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu{
+    border-top: 2px solid rgba(84, 84, 84, 0.5);
+    margin-top: -10px;
+    position: fixed;
+    left: -200%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  left: -30px;
+}
+}
+
+@media(max-width:667px){
+.reihe1{
+  margin-left: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reihe2{
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 0;
+} 
+
+.minions , .cars , .wick , .cptnamerica , .blackpanther, .endgame{
+display: block;
+}
+
+.minions2 , .cars2 , .wick2 , .cptnamerica2 , .blackpanther2 , .endgame2{
+display: none;
+}
+}
