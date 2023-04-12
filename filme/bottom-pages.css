@@ -202,6 +202,14 @@ body{
   justify-content: center;
 }
 
+.ueberschrift{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
 @media(max-width:1536px){
   
 #picture{
