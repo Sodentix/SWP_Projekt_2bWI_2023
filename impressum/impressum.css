@@ -9,6 +9,14 @@
 
   body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vH;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../homepage/moviebackground.jpg);
+    backdrop-filter: brightness(10%);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   li {
@@ -59,6 +67,21 @@
     transition: all 0.3s ease-in-out;
     background-color: white;
   }
+
+  .impressumInformationenDiv{
+    margin: 2rem;
+    background-image: url(../homepage/moviebackground.jpg);
+    backdrop-filter: brightness(10%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ipressuminf{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(182, 180, 180);
+  }
+
   @media(max-width:768px)
   {
     .hamburger{
@@ -105,7 +128,6 @@ h1 {
   margin-bottom: 1rem;
   letter-spacing: 2px;
   color: white;
-  background-color: #262626;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -149,8 +171,3 @@ h1 {
 .custom-shape-divider-bottom-1680902329 .shape-fill {
   fill: #ABABAB;
 }
-  
-
-  
-    
-  
