@@ -4,6 +4,10 @@
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url(../homepage/moviebackground.jpg);
+  backdrop-filter: brightness(10%);
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 header {
