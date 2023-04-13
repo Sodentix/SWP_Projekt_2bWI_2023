@@ -77,8 +77,6 @@
   }
 
   .ipressuminf{
-    display: flex;
-    flex-direction: column;
     background-color: rgb(182, 180, 180);
   }
 
@@ -119,7 +117,9 @@
     .nav-menu.active {
       left: 0;
     }
+
   }
+
 
 /* Styles für das Impressum */
 h1 {
