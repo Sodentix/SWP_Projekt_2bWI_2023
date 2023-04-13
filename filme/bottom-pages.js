@@ -27,7 +27,7 @@ form.addEventListener('submit', (event) => {
 
   // Kommentar-Element erstellen und hinzufügen
   const commentElement = document.createElement("p");
-  commentElement.textContent = "User64352:" + " " + comment;
+  commentElement.textContent = "User6969:" + " " + comment;
   commentElement.style.fontWeight = "bold";
   commentsContainer.appendChild(commentElement);
 
